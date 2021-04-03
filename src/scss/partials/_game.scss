@@ -1,0 +1,85 @@
+
+
+@media (max-width: 660px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .game-info {
+    margin-top: 2rem;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .game-board {
+    .board {
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+      border: 1px solid $board-border-color;
+      border-radius: .15rem;
+      
+      &.finished {
+        &, .square {
+          border-color: $primary;
+        }
+      }
+
+      .row {
+        display: flex;
+        border-collapse: collapse;
+      }
+      
+      .square {
+        line-height: .5;
+        font-size: 3.5rem;
+        border-collapse: collapse;
+        padding: 1.6rem;
+        border: 1px solid $board-border-color;
+        width: 2rem;
+        height: 2rem;
+
+        &[current-player]:hover:after {
+          content: attr(current-player);
+          color: rgba(0, 0, 0, .3);
+        }
+      }
+    }
+
+  }
+
+  .game-info {
+    text-align: center;
+    width: 300px;
+
+    .game-history {
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li  {
+          margin: .5rem 0;
+          
+          &.current-move a {
+            color: $danger !important;
+          }
+        }
+      }
+    }
+  }
+
+  .next-player {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    
+    .next-player-symbol {
+      margin-top: .4rem;
+      font-size: 2rem;
+    }
+  }
+}

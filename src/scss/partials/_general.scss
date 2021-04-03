@@ -1,0 +1,29 @@
+a {
+  color: darken($primary, 10%);
+  text-decoration: none;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+html, body, #app {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+@media (max-width: 660px) {
+  #app {
+    align-items: baseline !important;
+    margin-top: 2rem;
+  }
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
