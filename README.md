@@ -1,12 +1,7 @@
 # react-tic-tac-toe
 - **Jogo da Velha** em React.js
 
+**Demo**: https://joaohamerski.github.io/react-tic-tac-toe/
 
-### Start
-- cd `pasta-do-projeto`
-- `npm install`
-- `npx mix watch --hot`
-- Servidor rodando em `localhost:8080`
-
-#### Imagem demo
-![text](./public/images/demo.png)
+### Imagem demo
+![Imagem demo](./public/images/demo.png)
