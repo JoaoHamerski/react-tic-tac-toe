@@ -3,5 +3,3 @@
 
 **Demo**: https://joaohamerski.github.io/react-tic-tac-toe/
 
-### Imagem demo
-![Imagem demo](./public/images/demo.png)
